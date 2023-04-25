@@ -72,3 +72,14 @@ If you see black screen in the OBS preview:  Try to fullscreen the game and move
 
 ![image](https://user-images.githubusercontent.com/21064622/234254642-4a1475a0-374d-4576-899e-65e1a7bdbf9d.png)
 
+### Example of Game Capture
+Game capture is part of OBS software installation.
+![image](https://user-images.githubusercontent.com/21064622/234256793-19354c79-be58-4994-a709-78f369943d93.png)
+
+### Example of Application Audio Capture  
+This is a OBS plugin and is not part of OBS itself.
+![image](https://user-images.githubusercontent.com/21064622/234256664-2ed31f3f-08bd-49ad-80ac-1395aa5b2100.png)
+
+
+
+

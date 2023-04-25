@@ -68,5 +68,7 @@ Always remember to launch  OBS on the same dedicated GPU on which your game is r
 Do not use integrated video card unless you can run Stream/record and game on it at the same time.   
 If you will try, to run OBS and Game on different GPUs - Source: Game Capture  will see and record only black screen.  
 
+If you see black screen in the OBS preview:  Try to fullscreen the game and move around the menu of the game to initialize the OBS preview.
+
 ![image](https://user-images.githubusercontent.com/21064622/234254642-4a1475a0-374d-4576-899e-65e1a7bdbf9d.png)
 

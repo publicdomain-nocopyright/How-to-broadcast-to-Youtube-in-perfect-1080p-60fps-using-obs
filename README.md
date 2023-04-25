@@ -60,11 +60,13 @@ I prefer to use `CTRL + ALT + A` to start and stop the stream.
 
 ### Bonus: Game Streaming
 
-OBS Sources: Game Capture + Application Audio Capture
-OBS Plugins: win-capture-audio v2.2.3-beta
-https://obsproject.com/forum/resources/win-capture-audio.1338/
+OBS Sources: Game Capture + Application Audio Capture  
+OBS Plugins: win-capture-audio v2.2.3-beta  
+https://obsproject.com/forum/resources/win-capture-audio.1338/  
 
-Always remember to launch  OBS on the same dedicated GPU on which your game is running. Do not use integrated video card unless you can run Stream/record and game on it at the same time. If you will try, to run OBS and Game on different GPUs - Source: Game Capture  will see and record only black screen.
+Always remember to launch  OBS on the same dedicated GPU on which your game is running.   
+Do not use integrated video card unless you can run Stream/record and game on it at the same time.   
+If you will try, to run OBS and Game on different GPUs - Source: Game Capture  will see and record only black screen.  
 
 ![image](https://user-images.githubusercontent.com/21064622/234254642-4a1475a0-374d-4576-899e-65e1a7bdbf9d.png)
 

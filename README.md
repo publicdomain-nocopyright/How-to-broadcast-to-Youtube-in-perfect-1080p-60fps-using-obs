@@ -57,3 +57,7 @@ I prefer to use `CTRL + ALT + A` to start and stop the stream.
 
 
 ![image](https://user-images.githubusercontent.com/21064622/234248780-c40014df-882a-40d2-823b-edcdd709da55.png)
+
+### Bonus: Game Streaming
+
+

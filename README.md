@@ -82,4 +82,13 @@ This is a OBS plugin and is not part of OBS itself.
 
 
 
+### Bonus: Downloading streamed content
+
+Even if the stream is over, the video is segmented and need to be downloaded and merged into single video.
+
+Use https://github.com/yt-dlp/yt-dlp/releases/tag/2022.10.04
+
+
+
+
 

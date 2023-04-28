@@ -88,6 +88,8 @@ Even if the stream is over, the video is segmented and need to be downloaded and
 
 Use https://github.com/yt-dlp/yt-dlp/releases/tag/2022.10.04
 
+`yt-dlp.exe"https://www.youtube.com/watch?v=ytnc7g-R6y8`
+
 
 
 

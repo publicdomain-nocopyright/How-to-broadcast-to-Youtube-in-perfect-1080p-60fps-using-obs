@@ -35,7 +35,7 @@ Turn on 60 fps option: yes
 ### Open "Output" settings tab in OBS and increase Video and Audio bitrates
 OBS - Settings - Output - Streaming:  
 Video Bitrate: 30000Kbps 
-Audio Bitrate: 320Kbps
+Audio Bitrate: 160Kbps
 
 ![image](https://user-images.githubusercontent.com/21064622/234246775-f1151274-9bd5-4014-b1d4-2b5b60bec5ca.png)
 
@@ -91,6 +91,28 @@ Use https://github.com/yt-dlp/yt-dlp/releases/tag/2022.10.04
 `yt-dlp.exe "https://www.youtube.com/watch?v=ytnc7g-R6y8`
 
 
+### Launch OBS together with a game
 
+```
+@ECHO OFF
+setlocal
+
+start "" "steam://rungameid/228200"
+set processName=RelicCOH.exe
+
+:loop
+tasklist /fi "imagename eq %processName%" 2>NUL | find /i "%processName%" >NUL
+if not errorlevel 1 goto found
+echo Waiting for %processName% to appear...
+timeout /t 5 /nobreak >NUL
+goto loop
+
+:found
+echo %processName% process found.
+timeout /t 30 
+cd "C:\Program Files\obs-studio\bin\64bit\"
+"C:\Program Files\obs-studio\bin\64bit\obs64.exe" --startstreaming --minimize-to-try
+pause
+```
 
 

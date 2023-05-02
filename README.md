@@ -97,7 +97,12 @@ Use https://github.com/yt-dlp/yt-dlp/releases/tag/2022.10.04
 @ECHO OFF
 setlocal
 
-start "" "steam://rungameid/228200"
+
+"C:\Users\Windows10\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Steam\Company of Heroes.url"
+REM START /min "" "steam://rungameid/228200"
+
+REM Did not work at all: "C:\Program Files (x86)\Steam\steamapps\common\Company of Heroes Relaunch\RelicCOH.exe"
+
 set processName=RelicCOH.exe
 
 :loop
@@ -109,10 +114,31 @@ goto loop
 
 :found
 echo %processName% process found.
+explorer "https://www.youtube.com/live_dashboard"
 timeout /t 30 
+
+
+REM --minimize-to-try does not work on windows, you have to manually set global settings to start OBS in minimized/try mode.
 cd "C:\Program Files\obs-studio\bin\64bit\"
-"C:\Program Files\obs-studio\bin\64bit\obs64.exe" --startstreaming --minimize-to-try
-pause
+START /MIN "" "C:\Program Files\obs-studio\bin\64bit\obs64.exe" --minimize-to-try --startstreaming 
+
 ```
 
+
+### Fast and efficient streaming
+
+Final settings:
+
+Youtube: RTMP Stream Key 4K and 60FPS
+
+OBS Settings - Stream - Service: Youtube RTMP with Stream Key
+OBS Settings - Stream - Service - Server: Primary Youtube ingest server
+
+OBS Settings - Output - Video: 30000kbps
+OBS  Settings - Output - Audio: 160kbps
+
+OBS Settings - Video - Base (Canvas) Resolution: 1920x1080
+OBS Settings - Video - Common FPS values: 60FPS
+
+OBS - Source - Game Capture - Hook rate: Fastest
 
